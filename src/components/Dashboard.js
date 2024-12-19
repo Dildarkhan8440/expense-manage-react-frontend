@@ -64,6 +64,7 @@ export default function Dashboard() {
         <div className="row col-md-12">
           <div className="col-md-1"></div>
           <div className="col-md-10 pt-4">
+            <h2>Welcome {local_storage.data.name}!</h2>
             <h3>Expenses </h3>
             <div className="row col-md-12">
               <div className="col-md-2">
@@ -111,7 +112,7 @@ export default function Dashboard() {
                   <td>{item.category_id}</td>
                   <td>{item.amount}</td>
                   <td>{moment(item.expense_date).format('yyyy-MM-DD')}</td>
-                  <td> <Link to={`/editExpense/${item.id}`}><button type="button" className="btn btn-primary btn-sm btn-rounded">Edit</button></Link>
+                  <td> <Link to={`/editExpense/${item.id}`} className="p-1"><button type="button" className="btn btn-primary btn-sm btn-rounded">Edit</button></Link>
                       <button type="button" className="btn btn-danger btn-sm btn-rounded" onClick={() =>handleDelete(item.id)}>Delete</button>
                   </td>
                 </tr>

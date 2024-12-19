@@ -24,7 +24,7 @@ export default function Nav(){
                 {/* <!-- Left links --> */}
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                        <Link className="nav-link" to={'/dashboard'}>Dashboard</Link>
+                        <Link className="nav-link btn border" to={'/dashboard'}>Dashboard</Link>
                     </li>
                     {/* <li className="nav-item">
                         <a className="nav-link" href="#">Team</a>

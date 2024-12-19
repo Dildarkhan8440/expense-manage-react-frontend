@@ -73,7 +73,7 @@ export default function EditExpense() {
                 <div className="row col-md-12 pt-5">
                     <div className="col-md-1"></div>
                     <div className="col-md-10">
-                        <h3>Add Your Expenses</h3>
+                        <h3>Update Expense</h3>
                         <form onSubmit={handleSubmit}>
                             <div className="row">
                                 <div className="col">
